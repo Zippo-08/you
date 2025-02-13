@@ -59,22 +59,22 @@
                 this.size = 1;
                 this.messages = [
                     'Please pick yes',
-                    'Don\'t do this baby',
-                    'I promise you\'ll enjoy it.',
+                    'Don\'t do this beautiful',
+                    'I really want you today',
                     'Just say yes',
                     'I\'m a sweet guy 🥺',
-                    'Ogbeni pick yes joor',
-                    'Oya oya sorry <br> Please pick yes fine girl 🥺',
-                    'Asam Pete Nwa yio ma',
-                    'Small thing bby gyal <br> Just press that green button',
-                    'I love you baby',
-                    'I\'ll cry oh 😭',
-                    'Me self no small oh <br> I go do you 2.5GB make you know say men mount',
-                    'Oya oya',
-                    'Hi there <br> Would you do me the honor of being my Val??',
-                    'We\'ll eat oil rice and watch Passion of Christ together',
-                    'Oh <br> You don\'t like that one? Oya Mount Zion film',
-                    'Oh foreign movies??? <br> Walking Dead'
+                    'Hasini pick yes, it's right there',
+                    'Konjam sad i\'ll get',
+                    'We\'ll go out, have a good time',
+                    'Girl, just hit the green button',
+                    'i really really like you',
+                    'I\'ll cry 😭',
+                    'you like me...?',
+                    'So far, without a yes?!',
+                    'Heya hasini <br> would you do me the honor of being my Val?',
+                    'We\'ll go to the pool place, I\'ll show you my skills',
+                    'Oh, You don\'t like that one? How about a quiet dinner date?',
+                    'Orrr, we could do some other stuff while we\'re at it, ahem ahem'
                 ];
             }
         }" class="h-screen flex flex-col justify-center items-center text-center px-4">
@@ -82,7 +82,7 @@
         <div x-show="size !== 0" class="flex flex-col justify-center items-center  text-center">
             <img src="assets/love-gif.gif" alt="GIF" style="animation-iteration-count: infinite;">
 
-            <h1 x-show="size == 1" class="text-2xl" x-text="'Would you be my val 🥺 ' + (name ?? '')"></h1>
+            <h1 x-show="size == 1" class="text-2xl" x-text="'Would you be my valentine 🥺 ' + (name ?? '')"></h1>
 
             <p class="text-lg" x-html="messages[(size - 1) % messages.length]"></p>
 
